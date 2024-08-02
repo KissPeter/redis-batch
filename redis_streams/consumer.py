@@ -200,6 +200,3 @@ class Consumer(ConsumerAndMonitor):
             f"poll_time_ms={self.poll_time_ms})"
         )
 
-    def __del__(self):
-        if self.cleanup_on_exit:
-            self.remove_consumer(self.consumer_id)

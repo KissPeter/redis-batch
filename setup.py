@@ -5,7 +5,7 @@ Preparation instructions: https://packaging.python.org/tutorials/packaging-proje
 import os.path
 import re
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -76,7 +76,7 @@ setup_options = dict(
         "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: 3.13",
     ],
-    python_requires=">=3.6, <4",
+    python_requires=">=3.7, <4",
     package_data={"redis_streams": ["*.py"]},
     exclude_package_data={"redis_streams_test": ["*"]},
 )
